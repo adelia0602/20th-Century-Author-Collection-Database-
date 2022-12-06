@@ -51,7 +51,6 @@ class TypeController extends Controller
     }
 
     public function updatetype(Request $request, $id_type){
-        dd($request->all());
         $request->validate([
             'id_type'=>'required',
             'type_lit'=> 'required',
